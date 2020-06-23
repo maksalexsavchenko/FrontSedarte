@@ -1,0 +1,69 @@
+@media (max-width: 767px) {
+  .box {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .box:hover {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 767px) {
+  #sedarte-menu ul li {
+    display: block;
+    line-height: 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .copyright ul {
+    text-align: center;
+    margin-top: 40px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 768px) {
+  header .social-block ul {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  header .switcher-list {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  header .switcher-list ul li {
+    &:first-of-type {
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  header ul {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  #sedarte-menu ul {
+    display: none;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 767px) {
+  .mobile_icon_menu .hamburger .c_hamburger {
+    display: block;
+    margin-top: 20px;
+  }
+}

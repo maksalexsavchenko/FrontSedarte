@@ -1,0 +1,186 @@
+@keyframes loopLogo {
+  0% {
+    stroke-dashoffset: 2676.396240234375;
+  }
+
+  50% {
+    stroke-dashoffset: 1784.26416015625;
+  }
+
+  100% {
+    stroke-dashoffset: 892.132080078125;
+  }
+}
+
+.logo-loop path {
+  stroke-dasharray: 892.132080078125;
+  stroke-dashoffset: 892.132080078125;
+  -webkit-animation: loopLogo .3s infinite;
+  animation: loopLogo .3s infinite;
+}
+
+.header__menu-item a {
+  display: inline-block;
+  color: black;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.header__menu-item a ::after {
+  display: block;
+  content: "";
+  background-color: black;
+  height: 1.2px;
+  width: 0;
+  left: 50%;
+  margin-top: 3px;
+  position: absolute;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.header__menu-item a:hover ::after,
+.header__menu-item a:focus ::after {
+  width: 100%;
+  font-weight: bold;
+}
+
+@mixin btn-border-slide($color, $hoverColor, $borderWidth, $time) {
+  $easing: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  display: inline-block;
+  padding: 0.5em 2em;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: $borderWidth;
+    width: 100%;
+    background-color: $color;
+  }
+
+  &:before {
+    top: 0;
+  }
+
+  &:after {
+    bottom: 0;
+  }
+
+  &:hover {
+    & > * {
+      & > * {
+        &:before,
+        &:after {
+          transform: translate3d(0, 0, 0);
+        }
+
+        & > * {
+          &:before,
+          &:after {
+            transform: translate3d(0, 0, 0);
+          }
+        }
+      }
+    }
+  }
+
+  & > * {
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: $borderWidth;
+      background-color: $color;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+
+    & > * {
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        z-index: 9;
+        height: $borderWidth;
+        width: 100%;
+        background-color: $hoverColor;
+      }
+
+      &::before {
+        top: 0;
+        transform: translate3d(-105%, 0, 0);
+        transition: transform $time $easing;
+      }
+
+      &::after {
+        bottom: 0;
+        transform: translate3d(105%, 0, 0);
+        transition: transform $time $easing;
+      }
+
+      & > * {
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          z-index: 9;
+          height: 100%;
+          width: $borderWidth;
+          background-color: $hoverColor;
+        }
+        &::before {
+          left: 0;
+          transform: translate3d(0, 105%, 0);
+          transition: transform $time $easing;
+        }
+        &::after {
+          right: 0;
+          transform: translate3d(0, -105%, 0);
+          transition: transform $time $easing;
+        }
+      }
+    }
+  }
+}
+
+// Start of styling
+* {
+  box-sizing: border-box;
+}
+
+.btn {
+  @include btn-border-slide(#000000, #DCDCDC, 1.3px, 0.7s);
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .btn {
+    margin-top: 30px;
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

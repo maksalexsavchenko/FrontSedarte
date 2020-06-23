@@ -1,0 +1,94 @@
+header #header-logo {
+  margin: 0 auto;
+  width: 10em;
+  &:hover {
+    path {
+      stroke-dasharray: 892.132080078125;
+      stroke-dashoffset: 892.132080078125;
+      animation: loopLogo 3s infinite;
+    }
+  }
+
+}
+
+header .site-title {
+  text-align: center;
+  margin: 15px 0;
+}
+
+header .site-title  {
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+header .social-block li {
+    display: inline-block;
+  }
+
+
+header .social-block ul {
+
+  padding: 0;
+}
+
+
+#sedarte-menu{
+  border-bottom: 1px solid black;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  margin-top: -3px;
+}
+#sedarte-menu ul{
+  text-decoration: none;
+  text-align: center;
+  list-style: none;
+  margin-top: 20px;
+
+}
+
+#sedarte-menu ul li a{
+  text-transform: uppercase;
+  color: black;
+}
+
+#sedarte-menu ul li{
+  display: inline-block;
+  padding: 0 20px;
+
+}
+
+.box{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #ecf0f1;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50px;
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger .line{
+  width: 50px;
+  height: 3px;
+  background-color: black;
+  display: block;
+  margin: 10px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.box:hover {
+  cursor: pointer;
+}
+
+.btn {
+  text-transform: uppercase;
+  color: black;
+  font-size: 14px !important;
+}

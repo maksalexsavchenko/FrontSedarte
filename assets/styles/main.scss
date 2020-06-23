@@ -1,0 +1,96 @@
+@import "./components/header";
+@import "./components/anim";
+@import "./components/menu";
+@import "./components/footer";
+@import "./components/minmix";
+
+header {
+  padding: 30px 0 0;
+}
+
+body, .btn {
+  font-family: "futura-demic-reg", Arial, sans-serif !important;
+  font-size: 11px;
+  font-style: normal;
+  letter-spacing: .1em;
+  padding: 11px;
+}
+
+.container {
+  max-width: 1180px !important;
+}
+
+.fa {
+  display: inline-block;
+  font-size: 18px !important;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 5px;
+}
+
+.fa:hover {
+  transition: 1s ease-out;
+  color: black;
+}
+
+a:link,
+a:visited {
+  color: rgb(109, 110, 112);
+}
+
+.switcher-list {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.lang ul li {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.social-block a {
+  text-decoration: none;
+}
+
+#sedarte-menu ul li a:hover {
+  color: rgb(109, 110, 112);
+  transition: ease-in-out;
+}
+
+.sedarte-slider {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .sedarte-slider img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+.home-text {
+  display: none;
+}
+
+.content {
+  margin: 0 60px;
+}
+
+h2, .h2 {
+  border-bottom: 1px solid #ccc;
+  letter-spacing: 0.1em;
+  color: black;
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+p {
+  font-size: 14px;
+  color: black;
+  font-style: normal;
+  line-height: 1.6em;
+}
+
