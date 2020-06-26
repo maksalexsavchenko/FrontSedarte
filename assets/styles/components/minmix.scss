@@ -2,6 +2,8 @@
   .box {
     display: block;
   }
+
+  
 }
 
 @media (max-width: 767px) {
@@ -65,5 +67,11 @@
   .mobile_icon_menu .hamburger .c_hamburger {
     display: block;
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 371px) {
+ .content {
+    margin: 0 20px;
   }
 }
