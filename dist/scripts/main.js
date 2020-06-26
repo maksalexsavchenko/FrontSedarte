@@ -168,8 +168,8 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Максим\Desktop\front\assets/scripts/main.js */"./assets/scripts/main.js");
-module.exports = __webpack_require__(/*! C:\Users\Максим\Desktop\front\assets/styles/main.scss */"./assets/styles/main.scss");
+__webpack_require__(/*! C:\Users\Максим\Desktop\frntend\sedarteclone\Sedarte\assets/scripts/main.js */"./assets/scripts/main.js");
+module.exports = __webpack_require__(/*! C:\Users\Максим\Desktop\frntend\sedarteclone\Sedarte\assets/styles/main.scss */"./assets/styles/main.scss");
 
 
 /***/ }),
